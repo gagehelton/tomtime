@@ -1,0 +1,12 @@
+[Unit]
+Description="tomtime"
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/root/tomtime
+ExecStart=/usr/bin/python3 /root/tomtime/app.py -p
+
+[Install]
+WantedBy=multi-user.target
