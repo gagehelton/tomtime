@@ -1,13 +1,20 @@
 body {
+	background: url("https://restaurantsact.com/wp-content/uploads/2020/03/al-2.svg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	background-color: #fff;
 }
 
 }
 .card {
-	box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+	box-shadow: 0 0 1000px rgba(0, 0, 0,0.5);
 }
+
 .Absolute-Center {
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-40%, -50%);
 }
