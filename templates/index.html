@@ -17,14 +17,20 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href={{ url_for('static',filename='css/style.css') }}>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
 	<div class="container">
-		Tom Time<br>
-		<div class="time">{{ tomtime }}</div>
-	</div>
-	
+		<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="http://slintegratedsystems.com/wp-content/uploads/Headshots/Tom-Moon.png" alt="Card image cap">
+		    <div class="card-body">
+		        <h5 class="card-title">Tom Time</h5>
+		        <p class="card-text"></p>
+		    	<a href="#" class="btn btn-primary">{{ tomtime }}</a>
+			</div>
+		</div>
+	</div>	
   <script src={{ url_for('static',filename='js/app.js') }}></script>
 </body>
 
